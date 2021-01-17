@@ -1,8 +1,7 @@
-from bs4 import BeautifulSoup
-
-
-def get_tweet_text(statuses):
+def get_tweets(statuses):
+    tweets = []
 
     for status in statuses:
-        print(status.text)
-        print(status.created_at)
+        tweets.append(dict(text=status.text,
+                           created_at=status.created_at.strftime("%m/%d/%Y, %H:%M:%S")))
+    return tweets

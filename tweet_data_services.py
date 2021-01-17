@@ -19,15 +19,11 @@ def get_tweepy_api():
 def get_user_timeline(screen_name, page_count=1):
     api = get_tweepy_api()
     tweets = []
-
-    for status in tweepy.Cursor(api.user_timeline,
+    return tweepy.Cursor(api.user_timeline,
                                 screen_name=screen_name,
                                 trim_user=True,
                                 exclude_replies=True,
-                                include_rts=False).items(page_count):
+                                include_rts=False).items(page_count)
 
-        tweets.append(dict(text=status.text,
-                           created_at=status.created_at.strftime("%m/%d/%Y, %H:%M:%S")))
-    return tweets
 
 

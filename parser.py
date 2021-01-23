@@ -3,7 +3,7 @@ def get_tweets(statuses):
 
     for status in statuses:
         tweets.append(dict(text=status.text,
-                           created_at=status.created_at.strftime("%m/%d/%Y")))
+                           created_at=status.created_at.strftime("%-m/%d/%Y")))
     return tweets
 
 

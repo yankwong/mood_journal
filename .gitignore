@@ -6,7 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# packages
+static_web/packages
+
 # Others
+.DS_Store
 venv
 .env
 .idea

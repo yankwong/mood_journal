@@ -1,4 +1,5 @@
 $(() => {
+    $('#calendar').calendar();
     eel.get_date_dictionary()()
         .then(dateDictionary => {
             $main = $('.main');

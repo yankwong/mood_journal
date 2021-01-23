@@ -3,8 +3,8 @@ from pprint import pprint
 from tweet_data_service import TweetDataService
 import eel
 
-total_pages = 8
-username = 'elonmusk'
+total_pages = 20
+username = 'sentedcruz'
 
 
 def get_date_dictionary():

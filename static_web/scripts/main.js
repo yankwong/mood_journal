@@ -4,12 +4,12 @@ function getMoodClass(mood) {
 
     if (mood > 0) {
         moodClass = 'semi-happy';
-        if (mood > 0.5) {
+        if (mood >= 0.5) {
             moodClass = 'happy';
         }
     } else if (mood < 0) {
         moodClass = 'semi-unhappy';
-        if (mood < -0.5){
+        if (mood <= -0.5){
             moodClass = 'unhappy'
         }
     }

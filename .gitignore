@@ -7,7 +7,11 @@ __pycache__/
 *.so
 
 # packages
-static_web/packages
+static_web/packages/jquery-bootstrap-year-calendar/examples
+static_web/packages/jquery-bootstrap-year-calendar/.gitignore
+static_web/packages/jquery-bootstrap-year-calendar/jquery.bootstrap.year.calendar.css
+static_web/packages/jquery-bootstrap-year-calendar/jquery.bootstrap.year.calendar.js
+static_web/packages/jquery-bootstrap-year-calendar/README.md
 
 # Others
 .DS_Store

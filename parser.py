@@ -1,3 +1,6 @@
+from textblob import TextBlob
+
+
 def get_tweets(statuses):
     tweets = []
 
@@ -19,3 +22,12 @@ def get_date_dictionary(tweets):
             date_dictionary[tweet_date] = tweet["text"]
 
     return date_dictionary
+
+
+def get_mood_dictionary(date_dictionary):
+    mood_dictionary = dict()
+
+    for date in date_dictionary:
+        mood_dictionary[date] = TextBlob(date_dictionary[date]).sentiment.polarity
+
+    return mood_dictionary
